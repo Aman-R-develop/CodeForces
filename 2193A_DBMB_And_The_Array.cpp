@@ -9,7 +9,7 @@ int main()
     int n, s, x;
     int sum = 0;
     int arr[10];
-    char ans[100];
+    char ans[100000];
     cin >> rep;
     for (int i = 0; i < rep; i++)
     {
@@ -22,7 +22,6 @@ int main()
         {
             sum += arr[k];
         }
-        cout << sum << endl;
         if (sum > s)
         {
             ans[i] = 'n';
@@ -36,7 +35,6 @@ int main()
             while (sum < s)
             {
                 sum += x;
-                cout << sum << endl;
                 if (sum == s)
                 {
                     ans[i] = 'y';
